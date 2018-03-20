@@ -5,7 +5,6 @@ syntax enable             " enable syntax highlighting (previously syntax on).
 set cursorline            " highlight cursorline
 set number                " show line numbers   
 set relativenumber        " show relative line numbers
-" set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
 set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
@@ -18,7 +17,6 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
-" set nowrap                " don't wrap text
 
 let g:python_host_prog = '/usr/bin/python2.7'
 let g:python3_host_prog = '/usr/local/bin/python3'
@@ -38,6 +36,8 @@ if dein#load_state(expand('~/.vim/dein'))
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('scrooloose/nerdtree')
   call dein#add('vim-airline/vim-airline')
+  call dein#add('junegunn/fzf.vim', {'depends': 'fzf'})
+
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
@@ -60,3 +60,9 @@ let g:airline#extensions#tabline#tab_nr_type = 1 " show tab number
 " NerdTree Settings
 let NERDTreeIgnore = ['\.pyc$']
 let NERDTreeShowHidden = 1
+
+nnoremap <silent> <leader>e :NERDTreeToggle<cr>
+nnoremap <silent> <c-p> :FZF<cr>
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
