@@ -28,6 +28,7 @@ if &compatible
 endif
 let s:path = expand('~/.vim/dein')
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=/usr/local/opt/fzf
 
 if dein#load_state(expand('~/.vim/dein'))
   call dein#begin(expand('~/.vim/dein'))
@@ -51,10 +52,11 @@ syntax enable
 
 " let g:deoplete#enable_at_startup = 1
 colorscheme onedark       " use joshdick/onedark as colorscheme
-" airline settings
+" Airline Settings
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 1 " show tab number
+" NerdTree Settings
 let NERDTreeIgnore = ['\.pyc$']
 let NERDTreeShowHidden = 1
