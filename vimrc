@@ -3,7 +3,9 @@ filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
 colorscheme desert        " set colorscheme
+set cursorline            " set cursorline
 set number                " show line numbers
+set relativenumber        " show relative line numbers
 set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
 set nohlsearch            " Don't continue to highlight searched phrases.
@@ -17,4 +19,8 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
-set nowrap                " don't wrap text
+
+" set cursorline highlight
+hi CursorLine   cterm=NONE ctermbg=8 ctermfg=NONE
+" line number color
+highlight LineNr ctermfg=grey
