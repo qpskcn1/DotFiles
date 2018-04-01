@@ -91,9 +91,19 @@ symlink () {
     fi
 }
 
+# install fonts
+if test "$(uname)" = "Darwin"
+then
+    TARGET=$PWD/local/share/fonts/*
+    FILE=$HOME/Library/Fonts/
+    printf "Linking $Cyan$FILE${Color_off} -> $Blue$TARGET${Color_off}\n"
+    ln -s "$TARGET" "$FILE"
+else
+    symlink 'local/share/fonts'
+fi
+
 # Install configuration
 symlink 'gitconfig'
-symlink 'local/share/fonts'
 symlink 'zshrc'
 symlink 'vimrc'
 if [ ! -d "$HOME/.config" ];then
