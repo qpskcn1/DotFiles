@@ -36,6 +36,7 @@ if dein#load_state(expand('~/.vim/dein'))
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('scrooloose/nerdtree')
   call dein#add('ryanoasis/vim-devicons')
+  call dein#add('scrooloose/nerdcommenter')
   call dein#add('vim-airline/vim-airline')
   call dein#add('junegunn/fzf.vim', {'depends': 'fzf'})
 
