@@ -26,7 +26,6 @@ if &compatible
 endif
 let s:path = expand('~/.vim/dein')
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-set runtimepath+=/usr/local/opt/fzf
 
 if dein#load_state(expand('~/.vim/dein'))
   call dein#begin(expand('~/.vim/dein'))
@@ -38,7 +37,8 @@ if dein#load_state(expand('~/.vim/dein'))
   call dein#add('ryanoasis/vim-devicons')
   call dein#add('scrooloose/nerdcommenter')
   call dein#add('vim-airline/vim-airline')
-  call dein#add('junegunn/fzf.vim', {'depends': 'fzf'})
+  call dein#add('junegunn/fzf', { 'build': './install --all' })
+  call dein#add('junegunn/fzf.vim')
 
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
