@@ -1,3 +1,5 @@
 [user]
 	email = yizheng0831@gmail.com
 	name = qpskcn1
+[core]
+	autocrlf = true
