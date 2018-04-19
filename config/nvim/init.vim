@@ -65,6 +65,7 @@ let NERDTreeShowHidden = 1
 
 nnoremap <silent> <leader>e :NERDTreeToggle<cr>
 nnoremap <silent> <c-p> :FZF<cr>
+command! -nargs=0 Sw w !sudo tee % > /dev/null
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
