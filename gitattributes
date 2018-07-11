@@ -1,0 +1,4 @@
+# Ignore all differences in line endings
+* -crlf
+# no eol conversions!
+* -text
