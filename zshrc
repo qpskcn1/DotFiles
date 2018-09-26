@@ -95,3 +95,8 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$PATH:/Users/qpskcn1/Library/Python/2.7/bin
+
+export iterm2_hostname=Yis-MacBook-Pro.local
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
