@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Display MotD
+if [[ -e $HOME/.motd ]]; then $HOME/.motd; fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$PATH:/Users/qpskcn1/Library/Python/2.7/bin
 
