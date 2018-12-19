@@ -1,0 +1,55 @@
+{
+    "editor.fontFamily": "DroidSansMono Nerd Font Mono, Menlo, monospace",
+    "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
+    "editor.rulers": [80],
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "files.exclude": {
+        ".vscode/": true,
+        "**/._*": true,
+        "**/*.pyc": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before":["<C-n>"],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys":{
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "workbench.statusBar.feedback.visible": false,
+    "git.autofetch": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "window.zoomLevel": 0,
+    "editor.fontWeight": "600",
+    "workbench.tree.horizontalScrolling": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.startupEditor": "welcomePage",
+    "window.nativeFullScreen": false,
+
+}
