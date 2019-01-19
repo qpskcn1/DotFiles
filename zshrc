@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # to remove hostname in prompt
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER ⚡️"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
 # Display MotD
@@ -106,7 +106,7 @@ if [[ -e $HOME/.motd ]]; then $HOME/.motd; fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$PATH:/Users/qpskcn1/Library/Python/2.7/bin
 
-export iterm2_hostname=Yis-MacBook-Pro.local
+export iterm2_hostname=qpskcn1-MBP.local
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 
