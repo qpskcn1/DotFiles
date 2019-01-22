@@ -45,11 +45,15 @@
     "git.autofetch": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E402,W292",
+    ],
     "window.zoomLevel": 0,
     "editor.fontWeight": "600",
     "workbench.tree.horizontalScrolling": true,
     "terminal.external.osxExec": "iTerm.app",
     "workbench.startupEditor": "welcomePage",
     "window.nativeFullScreen": false,
+    "python.pythonPath": "/usr/local/bin/python3",
 
 }
