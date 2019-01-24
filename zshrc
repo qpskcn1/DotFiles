@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias shuf="gshuf"
 
 # Override prompt_context function
 # to remove hostname in prompt
