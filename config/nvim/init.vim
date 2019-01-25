@@ -18,7 +18,7 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 
-let g:python_host_prog = '/usr/bin/python2.7'
+let g:python_host_prog = '/usr/local/bin/python2.7'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 if &compatible
