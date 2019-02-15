@@ -39,7 +39,6 @@
     "vim.leader": "<space>",
     "vim.handleKeys":{
         "<C-a>": false,
-        "<C-f>": false
     },
     "workbench.statusBar.feedback.visible": false,
     "git.autofetch": true,
