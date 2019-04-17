@@ -3,7 +3,7 @@
     "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
     "editor.rulers": [80],
     "workbench.colorTheme": "Dracula Soft",
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "files.exclude": {
         ".vscode/": true,
         "**/._*": true,
@@ -40,19 +40,31 @@
     "vim.handleKeys":{
         "<C-a>": false,
     },
+    "vim.statusBarColorControl": true,
     "workbench.statusBar.feedback.visible": false,
     "git.autofetch": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E402,W292",
+        "--ignore=E402,E501,W292",
     ],
     "window.zoomLevel": 0,
     "editor.fontWeight": "600",
-    "workbench.tree.horizontalScrolling": true,
+    "workbench.list.horizontalScrolling": true,
     "terminal.external.osxExec": "iTerm.app",
     "workbench.startupEditor": "welcomePage",
     "window.nativeFullScreen": false,
     "python.pythonPath": "/usr/local/bin/python3",
+    "leetcode.defaultLanguage": "python3",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#44475a",
+        "statusBar.noFolderBackground": "#44475a",
+        "statusBar.debuggingBackground": "#44475a"
+    },
+    "vim.statusBarColors.insert": "#6272a4",
+    "vim.statusBarColors.replace": "#ff5555",
+    "vim.statusBarColors.normal": "#44475a",
+    "vim.statusBarColors.visual": "#44475a",
+    "vim.statusBarColors.visualblock": "#bd93f9",
 
 }
