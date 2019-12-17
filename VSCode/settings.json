@@ -3,7 +3,7 @@
     "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
     "editor.rulers": [80],
     "workbench.colorTheme": "Dracula Soft",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-icons",
     "files.exclude": {
         ".vscode/": true,
         "**/._*": true,
@@ -55,16 +55,22 @@
     "workbench.startupEditor": "welcomePage",
     "window.nativeFullScreen": false,
     "python.pythonPath": "/usr/local/bin/python3",
-    "leetcode.defaultLanguage": "python3",
+    "vim.statusBarColors.insert": "#6272a4",
+    "vim.statusBarColors.replace": "#ff5555",
+    "vim.statusBarColors.normal": "#44475a",
+    "vim.statusBarColors.visual": "#ffb86c",
+    "vim.statusBarColors.visualblock": "#8be9fd",
     "workbench.colorCustomizations": {
         "statusBar.background": "#44475a",
         "statusBar.noFolderBackground": "#44475a",
         "statusBar.debuggingBackground": "#44475a"
     },
-    "vim.statusBarColors.insert": "#6272a4",
-    "vim.statusBarColors.replace": "#ff5555",
-    "vim.statusBarColors.normal": "#44475a",
-    "vim.statusBarColors.visual": "#44475a",
-    "vim.statusBarColors.visualblock": "#bd93f9",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "liveServer.settings.donotVerifyTags": true,
 
 }
